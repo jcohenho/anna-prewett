@@ -1,3 +1,19 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  font-size: 3rem;
+
+}
+
+h3 {
+  color: #e85100;
+  font-weight: 200;
+  text-align: center;
+}
+section {
+  @include outer-container;
+
+  article { @include span-columns(4); }
+}
