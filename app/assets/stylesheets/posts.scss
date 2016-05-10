@@ -2,18 +2,44 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
-  font-size: 3rem;
+header {
+    @include outer-container;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    h1 {
+      font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+      font-weight: 200;
+      font-size: 3rem;
+      color: #BFC0C3;
+      @include span-columns(6);
+    }
+
+    nav.links {
+      @include span-columns(6);
+      text-align: right;
+      li {
+        display: inline;
+        margin-left: 15px;
+      }
+      a {
+        text-decoration: none;
+      }
+      margin-top: 2em;
+    }
 
 }
 
+
 h3 {
-  color: #e85100;
+  color: #404040;
   font-weight: 200;
   text-align: center;
 }
 section {
   @include outer-container;
 
-  article { @include span-columns(4); }
+  article {
+    @include span-columns(4);
+    @include omega(3n);
+  }
 }

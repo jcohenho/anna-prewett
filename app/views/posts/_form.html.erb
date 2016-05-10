@@ -20,7 +20,13 @@
     <%= f.text_field :subtitle %>
   </div>
   <div class="field">
-    <%= f.file_field :image %>
+    <%= f.fields_for :images do |ff| %>
+      <% if ff.object.new_record? %>
+        <p>
+        <%= ff.file_field :photo %>
+        </p>
+      <% end %>
+    <% end %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
