@@ -30,7 +30,7 @@ header {
 }
 
 
-h3 {
+h3.main {
   color: #404040;
   font-weight: 200;
   text-align: center;
@@ -58,5 +58,6 @@ section.home {
     p:first-child {
       margin-top: 0;
     }
+    h3 {margin-top: 0}
   }
 }

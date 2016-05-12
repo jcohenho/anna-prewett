@@ -4,9 +4,8 @@
     <%= image_tag @post.images.first.photo.url(:large) %>
   </aside>
   <article>
-    <p>
-
-      <strong><%= @post.subtitle %></strong>
+    <h3><%= @post.title.upcase %></h3>
+    <p><strong><%= @post.subtitle %></strong>
     </p>
     <p>
     <%= @post.description %>

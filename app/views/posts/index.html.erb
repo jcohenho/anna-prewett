@@ -5,7 +5,7 @@
 <% @posts.each do |post| %>
   <article>
     <%= link_to image_tag(post.images.first.photo.url(:medium)), post_path(post) %>
-    <aside><h3><%= post.title %></h3></aside>
+    <aside><h3 class='main'><%= post.title %></h3></aside>
   </article>
 <% end %>
 </section>
