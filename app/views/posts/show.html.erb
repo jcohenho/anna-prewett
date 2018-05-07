@@ -2,6 +2,7 @@
 <section class='home'>
   <aside>
     <%= image_tag @post.images.first.photo.url(:large) %>
+    <p>Uploaded on <%= @post.created_at.strftime('%D') %></p>
   </aside>
   <article>
     <h3><%= @post.title.upcase %></h3>
